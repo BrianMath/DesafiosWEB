@@ -53,5 +53,21 @@ button {
 
 	width: 400px;
 	margin: 0 auto;
+
+	transition: all 0.5 ease-in-out;
 }
 
+#campos button {
+	font-size: 40px;
+	opacity: 1;
+}
+
+.clicado {
+	background-color: #a4a4a4;
+	border-width: 1px;
+}
+
+.bomba {
+	background-color: #fb7d00;
+	border-width: 1px;
+}
