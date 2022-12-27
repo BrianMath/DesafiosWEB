@@ -1,29 +1,49 @@
+* {
+	font-family: 'Comfortaa', Roboto, sans-serif;
+}
+
 body {
 	border: 0;
 	margin: 0;
 	padding: 0;
+	height: 100%;
 
+	position: relative;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 
 	background-color: #1c1c2a;
 	color: rgb(238, 231, 231);
-	font-family: Roboto, sans-serif;
+}
+
+a, a:visited {
+	color: #ff401a;
+}
+
+main {
+	height: 100%;
+	margin-bottom: 10em;
 }
 
 h1 {
+	padding: 5px;
+	box-sizing: border-box;
 	font-size: 3em;
 }
 
 button {
 	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #escolhaBotoes label {
 	display: block;
-	font-size: 1.3em;
+	font-size: 1.5em;
+
 	padding: 4px;
+	margin: 20px auto 10px;
 }
 
 #escolhaBotoes input, #escolhaBotoes button {
@@ -33,7 +53,7 @@ button {
 	border: 2px solid rgb(0, 132, 255);
 
 	font-family: Roboto, sans-serif;
-	font-size: 18px;
+	font-size: 1.4em;
 }
 
 #escolhaBotoes button {
@@ -44,6 +64,11 @@ button {
 #escolhaBotoes button:hover {
 	background-color: #fff;
 	color: #1c1c2a;
+}
+
+#mensagem {
+	font-size: 2em;
+	font-weight: bold;
 }
 
 #campos {
@@ -62,12 +87,28 @@ button {
 	opacity: 1;
 }
 
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	box-sizing: border-box;
+
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
 .clicado {
 	background-color: #a4a4a4;
 	border-width: 1px;
 }
 
 .bomba {
-	background-color: #fb7d00;
+	background-color: #e02500;
 	border-width: 1px;
+}
+
+.gameOver {
+	pointer-events: none;
 }

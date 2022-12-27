@@ -6,22 +6,57 @@
 	<title>Campo Minado</title>
 
 	<link rel="stylesheet" href="style.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="bomba.png" type="image/x-icon">
+
+	<!-- Fonte Comfortaa 400, 700 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- Meta tags para Whatsapp -->
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="CampoMinado">
+	<meta property="og:description" content="Venha jogar o clássico Campo Minado!">
+	<meta property="og:url" content="https://brianmath.github.io/DesafiosWEB/CampoMinado/">
+	<meta property="og:image" content="https://i.imgur.com/y2gpFHw.png">
+	<meta property="og:image:alt" content="Logo do site">
+	<meta property="og:image:width" content="512">
+	<meta property="og:image:height" content="512">
 </head>
 
 <body>
 	<main>
-		<h1>Campo Minado</h1>
+		<h1>Camp💣 Minado</h1>
+
+		<hr>
 
 		<section id="escolhaBotoes">
 			<label for="qtdBotoes">Quantos botões deseja na tela?</label>
-			<input type="number" id="qtdBotoes" min="1">
+			<input type="number" id="qtdBotoes" min="1" tabindex="1">
 			<button onclick="criarBotoes()">Gerar</button>
+		</section>
+
+		<section id="mensagem">
+			<p></p>
 		</section>
 
 		<section id="campos">
 		</section>
 	</main>
 	
+	<footer>
+		<p>
+			All emojis designed by <a href="https://openmoji.org/" target="_blank" rel="noreferrer noopener">OpenMoji</a> -- the open-source emoji and icon project. License: <a href="https://creativecommons.org/licenses/by-sa/4.0/#" target="_blank" rel="noreferrer noopener">CC BY-SA 4.0</a>
+		</p>
+
+		<p>
+			<a href="https://www.flaticon.com/free-icons/bomb" title="bomb icons" target="_blank" rel="noreferrer noopener">Bomb icons</a> created by Freepik - Flaticon
+		</p>
+	</footer>
+
 	<script src="script.js"></script>
 </body>
 </html>
